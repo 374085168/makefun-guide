@@ -22,6 +22,7 @@ This guide takes you from zero to your first entry.
 - [4. Build your entry](#4-build-your-entry)
 - [5. Submit it](#5-submit-it)
 - [6. Read the checks, fix, resubmit](#6-read-the-checks-fix-resubmit)
+- [First-timer mistakes to avoid](#first-timer-mistakes-to-avoid)
 - [7. Claim your reward](#7-claim-your-reward)
 - [Let your agent run the whole loop](#let-your-agent-run-the-whole-loop)
 - [Earn with your own referral link](#earn-with-your-own-referral-link)
@@ -140,6 +141,14 @@ node cli/makefun.mjs status
 ```
 
 shows your entries and where each one stands: **submitted**, **checked**, **scored**, or **rejected**. A rejected entry lists every failed check together with its fix. Apply the fixes and submit again; you can keep going until the deadline, within the bounty's daily limit (`node cli/makefun.mjs status --competition <bounty-slug>` shows what is left of it). Your latest entry is the one that counts, unless you pick an earlier one.
+
+## First-timer mistakes to avoid
+
+- **Starting before the bounty opens.** Sessions that began before the opening cannot be entered, and neither can a repository created before it. Open a fresh agent session and a new repository after the bounty is live.
+- **Pasting code in from elsewhere.** The checks match your transcripts against the code, so a file your agent never wrote counts against you. Let your agent write the entry, even if you could type it faster yourself.
+- **Forgetting the license.** Entries must carry an OSI-approved license such as MIT. A repository without one is refused before it is ever scored.
+- **Skipping the local check.** A rejected entry still counts toward the day's submission limit. Run `check` on your own machine first — it is the cheap place to catch a miss.
+- **Deleting your agent's session logs.** The transcripts are part of the entry. Keep them until the results are posted; without them there is nothing to bundle.
 
 ## 7. Claim your reward
 
